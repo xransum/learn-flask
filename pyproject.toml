@@ -6,29 +6,50 @@ authors = ["xransum <xransum@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
 
+[tool.poetry.scripts]
+example_0 = "learn_flask.00_basic.run:main"
+
 [tool.poetry.dependencies]
-python = "^3.11"
-flask = "^3.0.0"
+python = ">=3.11,<4"
+flask = ">=3.0.0"
 
 [tool.poetry.group.dev.dependencies]
-nox = "^2023.4.22"
-nox-poetry = "^1.0.3"
-pytest = "^7.4.3"
-flake8 = "^6.1.0"
-black = "^23.11.0"
-flake8-bandit = "^4.1.1"
-flake8-bugbear = "^23.9.16"
-flake8-docstrings = "^1.7.0"
-flake8-rst-docstrings = "^0.3.0"
-darglint = "^1.8.1"
-isort = "^5.12.0"
+nox = ">=2023.4.22"
+nox-poetry = ">=1.0.3"
+pytest = ">=7.4.3"
+coverage = {extras = ["toml"], version = ">=6.3"}
+flake8 = ">=6.1.0"
+black = ">=23.11.0"
+flake8-bandit = ">=4.1.1"
+flake8-bugbear = ">=23.9.16"
+flake8-docstrings = ">=1.7.0"
+flake8-rst-docstrings = ">=0.3.0"
+# TODO: The 'python < 4' constraint is
+#   a workaround to allow poetry to
+#   generate a lock file. Hopefully
+#   there's an alternative to darglint
+#   before Python 4 is released.
+darglint = {version = ">=1.8.1", python = "<4"}
+isort = ">=5.10.1"
+pep8-naming = ">=0.12.1"
+pre-commit-hooks = ">=4.1.0"
+furo = ">=2022.1.2"
+Pygments = ">=2.11.2"
+# TODO: Remove the 'python' constraint
+#   once poetry drops its own constraint.
+poetry = {version = ">=1.1.12", python = "<4"}
+pytest-datadir = ">=1.3.1"
+typing-extensions = ">=4.0.1"
+pyupgrade = ">=2.31.0"
+myst-parser = ">=0.16.1"
+reorder-python-imports = ">=3.12.0"
 
 [tool.coverage.paths]
-source = ["src", "*/site-packages"]
+source = ["learn_flask", "*/site-packages"]
 
 [tool.coverage.run]
 branch = true
-source = ["src"]
+source = ["learn_flask"]
 
 [tool.coverage.report]
 show_missing = true
