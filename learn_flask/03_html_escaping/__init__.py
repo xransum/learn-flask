@@ -18,13 +18,13 @@ from markupsafe import escape
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index() -> str:
     """Returns the Index page."""
-    return 'Index Page'
+    return "Index Page"
 
 
 @app.route("/<name>")
 def hello(name: str) -> str:
-   """Return a variable that's HTML safe."""
-   return f"Hello, {escape(name)}!"
+    """Return a variable that's HTML safe."""
+    return f"Hello, {escape(name)}!"

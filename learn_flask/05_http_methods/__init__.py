@@ -10,91 +10,100 @@ app = Flask(__name__)
 
 @app.route("/")
 def index() -> str:
-    """Default: GET requests only.
+    """Default: GET requests only, by default only accept GET requests.
 
-    By default Flask routes only accept GET requests.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/hello", methods=["GET"])
 def hello() -> str:
-    """GET requests only (explicit).
+    """GET requests only (explicit), only accepts GET requests.
 
-    This route only accepts GET requests, similarly to the
-    index route.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/world", methods=["POST"])
 def world() -> str:
-    """POST requests only.
+    """POST requests only, used typically for accepting form data.
 
-    Used typically for accepting form data.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/foo", methods=["PUT"])
 def foo() -> str:
-    """PUT requests only.
+    """PUT requests only, used typically for updating data.
 
-    Used typically for updating data.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/bar", methods=["DELETE"])
 def bar() -> str:
-    """DELETE requests only.
+    """DELETE requests only, used typically for deleting data.
 
-    Used typically for deleting data.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/baz", methods=["PATCH"])
 def baz() -> str:
-    """PATCH requests only.
+    """PATCH requests only, used typically for updating data.
 
-    Used typically for updating data.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/qux", methods=["HEAD"])
 def qux() -> str:
-    """HEAD requests only.
+    """HEAD requests only, used typically for checking if a resource exists.
 
-    Used typically for checking if a resource exists.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/quux", methods=["OPTIONS"])
 def quux() -> str:
-    """OPTIONS requests only.
+    """OPTIONS requests only, used for checking what methods are allowed.
 
-    Used typically for checking what methods are allowed.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/corge", methods=["TRACE"])
 def corge() -> str:
-    """TRACE requests only.
+    """TRACE requests only, used typically for debugging.
 
-    Used typically for debugging.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
 
 @app.route("/grault", methods=["CONNECT"])
 def grault() -> str:
-    """CONNECT requests only.
+    """CONNECT requests only, used typically for proxying.
 
-    Used typically for proxying.
+    Returns:
+        str: A simple greeting.
     """
     return "Hello, World!"
 
@@ -106,10 +115,10 @@ user, passwd = None, None
 
 @app.route("/login", methods=["GET", "POST"])
 def login() -> str:
-    """GET and POST requests only.
+    """GET and POST requests only, commonly used for login systems.
 
-    This allows for handling multiple HTTP methods with
-    a single route.
+    Returns:
+        str: A login form or a greeting.
     """
     global user, passwd
 

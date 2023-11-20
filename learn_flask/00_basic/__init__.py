@@ -1,4 +1,4 @@
-"""Basic Flask App Package
+"""Basic Flask App Package.
 
 For a Flask web application, this is it at its
 core and with all first beginnings, here's
@@ -12,5 +12,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world() -> str:
-   """Returns 'Hello, World!' in HTML."""
-   return "<p>Hello, World!</p>"
+    """Returns 'Hello, World!' in HTML.
+
+    Returns:
+        str: A simple greeting.
+    """
+    return "<p>Hello, World!</p>"

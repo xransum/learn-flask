@@ -11,13 +11,21 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def index() -> str:
-    """Returns the Index page."""
-    return 'Index Page'
+    """Returns the Index page.
+
+    Returns:
+        str: A simple greeting.
+    """
+    return "Index Page"
 
 
-@app.route('/hello')
+@app.route("/hello")
 def hello() -> str:
-    """Returns simple 'Hello, World!'."""
-    return 'Hello, World!'
+    """Returns simple 'Hello, World!'.
+
+    Returns:
+        str: A simple greeting.
+    """
+    return "Hello, World!"

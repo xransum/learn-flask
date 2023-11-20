@@ -3,6 +3,7 @@
 ## Installation
 
 For Ubuntu, install the required dependencies:
+
 ```bash
 sudo apt update && sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
@@ -10,11 +11,13 @@ libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 ```
 
 Install Pyenv:
+
 ```bash
 curl https://pyenv.run | bash
 ```
 
 Add Pyenv Environment Variables to your `~/.bashrc`:
+
 ```bash
 export PATH="~/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -22,64 +25,73 @@ eval "$(pyenv virtualenv-init -)"
 ```
 
 Reload your `~/.bashrc`:
+
 ```bash
 source ~/.bashrc
 ```
 
 Verify your version to ensure installation was complete:
+
 ```bash
 pyenv --version
 ```
 
 Install Python 3.11:
+
 ```bash
 pyenv install 3.11
 ```
 
 Set 3.11 as your Global version:
+
 ```bash
 pyenv global 3.11
 ```
 
 Now any shell you open will use this global version by default:
+
 ```bash
 $ python -V
 Python 3.11.5
 ```
 
 Install Python Poetry:
+
 ```
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 
 Add the following to your `~/.bashrc`:
+
 ```
 [ -f "$HOME/.poetry/env" ] && . $HOME/.poetry/env
 ```
 
 Reload your `~/.bashrc`:
+
 ```bash
 source ~/.bashrc
 ```
 
 Check the Poetry command works:
+
 ```bash
 $ poetry --version
 Poetry (version 1.7.1)
 ```
 
-
 ## Setup
 
 Choose between either of the following next steps on how to begin a project:
+
 1. [Clone this Project](#clone-this-project)
 1. [Github Repository from Scratch](#github-repository-from-scratch)
 1. [Local Only Project from Scratch](#local-only-project-from-scratch)
 
-
 ### Clone this Project
 
 Clone the Repository and `cd` to it:
+
 ```bash
 git clone github.com:xransum/learn-flask
 cd learn-flask/
@@ -87,24 +99,24 @@ cd learn-flask/
 
 Continue from [Install Python Dependencies](#install-python-dependencies)
 
-
 ### Github Project from Scratch
 
 Create a [GitHub](https://github.com) a repository, and populate
-it with `README.md` and `LICENSE` files, preferably use the 
+it with `README.md` and `LICENSE` files, preferably use the
 [MIT license](https://choosealicense.com/licenses/mit/), since
 it's a simple permissive license.
 
 Clone the repository to your machine, and `cd` into it:
+
 ```
 git clone git@github.com:<github-username>/new-project.git
 cd new-project/
 ```
 
-
 ### Local Only Project from Scratch
 
 Create your project directory and `cd` to it:
+
 ```bash
 mkdir new-project
 cd new-project/
@@ -112,15 +124,16 @@ cd new-project/
 
 Continue from [Creating a Poetry Project](#creating-a-poetry-project).
 
-
 ### Creating a Poetry Project
 
 Initialize your Python project:
+
 ```bash
 poetry init
 ```
 
 You should see something of the sorts:
+
 ```bash
 $ poetry init
 
@@ -159,18 +172,18 @@ You should now have a `pyproject.toml` file, the new Python package
 configuration file specified in [PEP 517](https://www.python.org/dev/peps/pep-0517/)
 and [518](https://www.python.org/dev/peps/pep-0518/).
 
-
 Continue from [Install Python Dependencies](#install-python-dependencies)
-
 
 ### Install Python Dependencies
 
 To add dependencies, you can use the following:
+
 ```bash
 poetry add Flask
 ```
 
 To remove dependencies:
+
 ```bash
 poetry remove Flask
 ```
@@ -178,7 +191,7 @@ poetry remove Flask
 From within your project directory, you can use the install
 sub-command with Poetry to install the dependencies specified
 in your projects `pyproject.toml`.
+
 ```bash
 poetry install
 ```
-
