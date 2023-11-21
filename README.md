@@ -26,6 +26,25 @@ the development of a Flask application.
 4. [HTML Escaping](./learn_flask/04_html_escaping/__init__.py)
 5. [Unique URLs and Redirects](./learn_flask/05_unique_urls_and_redirects/__init__.py)
 6. [HTTP Methods](./learn_flask/06_http_methods/__init__.py)
+7. [Templates](./learn_flask/07_templates/__init__.py)
+8. [Static Files](./learn_flask/08_static_files/__init__.py)
+
+*WIP:*
+- [Jinja Templates](#)
+- [Jinja Template Inheritance](#)
+- [Message Flashing](#)
+- [Request Arguments](#)
+- [Cookies](#)
+- [File Uploads](#)
+- [Secure File Uploads](#)
+- [Cookies](#)
+- [Redirects and Errors](#)
+- [Custom Error Pages](#)
+- [API Frameworks](#)
+- [Sessions](#)
+- [Middleware](#)
+- [Databases](#)
+- [Simple User Login](#)
 
 
 ## Testing
