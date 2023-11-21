@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask Templates</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>Flask Templates</h1>
+        <p>This is a Flask template for the <code>/</code> page.</p>
+        
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
