@@ -1,5 +1,61 @@
 # learn-flask
 
+## Table of Contents
+
+- [learn-flask](#learn-flask)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Testing](#testing)
+  - [Installation](#installation)
+  - [Setup](#setup)
+    - [Clone this Project](#clone-this-project)
+    - [Github Project from Scratch](#github-project-from-scratch)
+    - [Local Only Project from Scratch](#local-only-project-from-scratch)
+    - [Creating a Poetry Project](#creating-a-poetry-project)
+    - [Install Python Dependencies](#install-python-dependencies)
+
+## Overview
+
+This project is more of a learn by example then a tutorial, it
+provides a set of documented examples for each advancing step in
+the development of a Flask application.
+
+1. [Basic](./learn_flask/01_basic/__init__.py)
+2. [Routing](./learn_flask/02_routing/__init__.py)
+3. [Routing Rules](./learn_flask/03_routing_rules/__init__.py)
+4. [HTML Escaping](./learn_flask/04_html_escaping/__init__.py)
+5. [Unique URLs and Redirects](./learn_flask/05_unique_urls_and_redirects/__init__.py)
+6. [HTTP Methods](./learn_flask/06_http_methods/__init__.py)
+
+
+## Testing
+
+This repository has been onboarded with Poetry and Nox Poetry, so you can
+run the following to install the dependencies:
+
+```bash
+poetry install
+```
+
+To run the Nox test sessions, you can use the following:
+
+```bash
+poetry run nox -s tests
+```
+
+To run the specific applications locally you can use the
+following:
+
+```bash
+poetry run 01_basic
+poetry run 02_routing
+poetry run 03_routing_rules
+poetry run 04_html_escaping
+poetry run 05_unique_urls_and_redirects
+poetry run 06_http_methods
+```
+
+
 ## Installation
 
 For Ubuntu, install the required dependencies:
@@ -84,9 +140,17 @@ Poetry (version 1.7.1)
 
 Choose between either of the following next steps on how to begin a project:
 
-1. [Clone this Project](#clone-this-project)
-1. [Github Repository from Scratch](#github-repository-from-scratch)
-1. [Local Only Project from Scratch](#local-only-project-from-scratch)
+- [learn-flask](#learn-flask)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Testing](#testing)
+  - [Installation](#installation)
+  - [Setup](#setup)
+    - [Clone this Project](#clone-this-project)
+    - [Github Project from Scratch](#github-project-from-scratch)
+    - [Local Only Project from Scratch](#local-only-project-from-scratch)
+    - [Creating a Poetry Project](#creating-a-poetry-project)
+    - [Install Python Dependencies](#install-python-dependencies)
 
 ### Clone this Project
 

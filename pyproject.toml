@@ -7,12 +7,12 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.scripts]
-example_0 = "learn_flask.00_basic.run:main"
-example_1 = "learn_flask.01_routing.run:main"
-example_2 = "learn_flask.02_routing_rules.run:main"
-example_3 = "learn_flask.03_html_escaping.run:main"
-example_4 = "learn_flask.04_unique_urls_and_redirects.run:main"
-example_5 = "learn_flask.05_http_methods.run:main"
+01_basic = "learn_flask.01_basic.run:main"
+02_routing = "learn_flask.02_routing.run:main"
+03_routing_rules = "learn_flask.03_routing_rules.run:main"
+04_html_escaping = "learn_flask.04_html_escaping.run:main"
+05_unique_urls_and_redirects = "learn_flask.05_unique_urls_and_redirects.run:main"
+06_http_methods = "learn_flask.06_http_methods.run:main"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4"
