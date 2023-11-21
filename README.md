@@ -55,6 +55,8 @@ poetry run 03_routing_rules
 poetry run 04_html_escaping
 poetry run 05_unique_urls_and_redirects
 poetry run 06_http_methods
+poetry run 07_templates
+poetry run 08_static_files
 ```
 
 
