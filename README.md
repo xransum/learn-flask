@@ -30,9 +30,11 @@ the development of a Flask application.
 
 ## Testing
 
-This repository has been onboarded with Poetry and Nox Poetry, so you can
-run the following to install the dependencies:
+This repository has been onboarded with Poetry and Nox Poetry, to
+setup your environment, you can follow the [Installation](#installation)
+and [Setup](#setup) sections below.
 
+To install the dependencies:
 ```bash
 poetry install
 ```
