@@ -13,6 +13,8 @@ readme = "README.md"
 04_html_escaping = "learn_flask.04_html_escaping.run:main"
 05_unique_urls_and_redirects = "learn_flask.05_unique_urls_and_redirects.run:main"
 06_http_methods = "learn_flask.06_http_methods.run:main"
+07_templates = "learn_flask.07_templates.run:main"
+08_static_files = "learn_flask.08_static_files.run:main"
 
 [tool.poetry.dependencies]
 python = ">=3.11,<4"
